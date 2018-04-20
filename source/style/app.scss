@@ -1,0 +1,29 @@
+//- -variables
+//- animation duration
+$pathDur: 4s;
+$linesDur: 0.6s;
+$circlesDur: 0.6s;
+$textDur: 1s;
+//- main colors
+$textTitle: #fff;
+$text1: #3CB8C1;
+$text2: #3FB6C1;
+$text3: #6297C6;
+$text4: #9170CB;
+$text5: #AB57CD;
+$gradientStart: #FF10D8;
+$gradientEnd: #10DEBC;
+$darkGrey: #27323c;
+$circle1: #10DEBC;
+$circle2: #4FBAC9;
+$circle3: #807DC9;
+$circle4: #BC4AD0;
+$circle5: #F619D7;
+// layout
+@import 'mixins/mixins';
+@import 'layout/font';
+@import 'layout/settings';
+// components
+@import 'components/**/*.*';
+@import 'common/**/*.*';
+

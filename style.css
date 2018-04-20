@@ -1,0 +1,235 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, sans-serif;
+}
+.timeline {
+    width: 100%;
+    background-color: #27323c;
+}
+/* Text style */
+.text {
+    animation-name: opacity;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    opacity: 0;
+}
+.textBlock_1 {
+    position: absolute;
+    top: 10px;
+    left: 20%;
+}
+.text__title {
+    font-size: 18px;
+    fill: #fff;
+    font-weight: 400;
+}
+.text__line {
+    font-size: 14px;
+    fill: #3CB8C1;
+    font-weight: lighter;
+}
+.text__line_fill2 {
+    fill: #3FB6C1;
+}
+.text__line_fill3 {
+    fill: #6297C6;
+}
+.text__line_fill4 {
+    fill: #9170CB;
+}
+.text__line_fill5 {
+    fill: #AB57CD;
+}
+/* Timeline graph style & animation*/
+.timeline__svg {
+    width: 100%;
+    display: block;
+}
+.path {
+    stroke-dasharray: 2200;
+    stroke-dashoffset: 2200;
+    animation-name: drawPath;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+.lines {
+    stroke-dasharray: 200;
+    stroke-dashoffset: 200;
+    animation-duration: 0.6s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+.line1,
+.line5 {
+    animation-name: linesUp;
+}
+.line2,
+.line3,
+.line4 {
+    animation-name: linesDown;
+}
+.circles {
+    opacity: 0;
+    animation-name: opacity;
+    animation-duration: 0.6s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+/* .circle1 {
+    animation-delay: 2s;
+}
+.circle2 {
+    animation-delay: 2.2s;
+}
+.circle3 {
+    animation-delay: 2.4s;
+}
+.line1 {
+    animation-delay: 2.8s;
+}
+.text1 {
+    animation-delay: 3.2s;
+}
+.circle4 {
+    animation-delay: 3.4s;
+}
+.line2 {
+    animation-delay: 3.8s;
+}
+.text2 {
+    animation-delay: 4.2s;
+}
+.circle5 {
+    animation-delay: 4.4s;
+}
+.circle6 {
+    animation-delay: 4.6s;
+}
+.line3 {
+    animation-delay: 5s;
+}
+.text3 {
+    animation-delay: 5.4s;
+}
+.circle7 {
+    animation-delay: 5.6s;
+}
+.line4 {
+    animation-delay: 6s;
+}
+.text4 {
+    animation-delay: 6.4s;
+}
+.circle8 {
+    animation-delay: 6.6s;
+}
+.line5 {
+    animation-delay: 7s;
+}
+.text5 {
+    animation-delay: 7.4s;
+}
+.circle9 {
+    animation-delay: 7.6s;
+}
+.circle10 {
+    animation-delay: 7.8s;
+} */
+
+.circle1 {
+    animation-delay: 0.8s;
+}
+.circle2 {
+    animation-delay: 1s;
+}
+.circle3 {
+    animation-delay: 1.2s;
+}
+.line1 {
+    animation-delay: 1.4s;
+}
+.text1 {
+    animation-delay: 1.6s;
+}
+.circle4 {
+    animation-delay: 1.8s;
+}
+.line2 {
+    animation-delay: 2s;
+}
+.text2 {
+    animation-delay: 2.2s;
+}
+.circle5 {
+    animation-delay: 2.4s;
+}
+.circle6 {
+    animation-delay: 2.6s;
+}
+.line3 {
+    animation-delay: 2.8s;
+}
+.text3 {
+    animation-delay: 3s;
+}
+.circle7 {
+    animation-delay: 3.2s;
+}
+.line4 {
+    animation-delay: 3.4s;
+}
+.text4 {
+    animation-delay: 3.6s;
+}
+.circle8 {
+    animation-delay: 3.8s;
+}
+.line5 {
+    animation-delay: 4s;
+}
+.text5 {
+    animation-delay: 4.2s;
+}
+.circle9 {
+    animation-delay: 4.4s;
+}
+.circle10 {
+    animation-delay: 4.6s;
+}
+
+
+@keyframes drawPath {
+    0% {
+        stroke-dashoffset: 2200;
+    }
+    100% {
+        stroke-dashoffset: 0
+    }
+}
+@keyframes opacity {
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes linesUp {
+    0% {
+        stroke-dashoffset: 200;
+    }
+    100% {
+        stroke-dashoffset: 400;
+    }
+}
+@keyframes linesDown {
+    0% {
+        stroke-dashoffset: 200;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}

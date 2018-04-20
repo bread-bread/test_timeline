@@ -1,0 +1,7 @@
+mixin socials(namesArr)
+    ul.socials
+        each item in namesArr
+            li.socials__item
+                a(href="#").social__link
+                    svg.socials__icon
+                        use(xlink:href=`./assets/img/icons/sprite.svg#${item}`)
